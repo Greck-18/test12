@@ -1,0 +1,174 @@
+footer{
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  background: linear-gradient(82.99deg, #2D353D 31.08%, rgba(45, 53, 61, 0.92) 110.64%);
+
+
+  &__body {
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 0px;
+
+    @media(max-width:992px){
+      min-width: 80px;
+    }
+    @media(max-width:768px){
+
+      min-width: 50px;
+    }
+    @media(max-width:922px){
+      display: block;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+    }
+
+  }
+
+  // .footer__main
+
+  &__main {
+
+    padding: 72px 0px 0px 0px;
+  }
+
+
+
+  // .footer__text
+
+  &__text {
+    font-size: 15px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #D9DFEA;
+    opacity: 0.3;
+    line-height: 130%;
+    max-width: 163px;
+    padding: 15px 0px;
+
+  }
+
+  // .footer__menu
+
+  &__menu {
+    display: flex;
+    flex: 0 1 auto;
+    @media(max-width:992px){
+
+      margin: 0px 0px 0px 80px;
+    }
+
+    @media(max-width:768px){
+
+      margin: 0px 0px 0px 0px;
+    }
+    @media(max-width:630px){
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.contacts-footer {
+  padding: 102px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  // .contacts-footer__item
+
+  &__item {
+    padding: 2px;
+    color:white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    &:hover{
+      color:gray;
+    }
+
+  }
+}
+.footer__logo {
+  img {
+    width:80%;
+  }
+}
+
+.menu-footer {
+
+  // .menu-footer__column
+
+  &__column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 40px;
+    padding: 5px 0px;
+    position: relative;
+    @media(max-width:630px){
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+  }
+
+  // .menu-footer__title
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    &:not(:last-child){
+      padding: 0px 0px 0px 15px;
+    }
+    @media(max-width:992px){
+      font-size: 24px;
+    }
+    @media(max-width:768px){
+      font-size: 20px;
+    }
+    &:hover {
+      color: gray;
+    }
+  }
+
+  // .menu-footer__list
+
+  &__list {
+    padding: 0px 0px 20px 24px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  // .menu-footer__link
+
+  &__link {
+    color:white;
+    &:hover{
+      color:gray;
+    }
+  }
+}
+a{
+  text-decoration: none;
+}
+.footer__icons{
+  display: flex;
+}
