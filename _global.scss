@@ -381,6 +381,10 @@ table {
     font-size: 30px;
     margin-left: -50px;
   }
+  @media (max-width:600px) {
+    max-width: 400px;
+
+  }
   @media (max-width: 480px) {
     width: 250px;
     margin-left: -50px;
@@ -746,16 +750,61 @@ table {
   &__block {
     display: flex;
     font-style: normal;
+    @media (max-width: 1300px) {
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+    };
+    @media (max-width: 700px) {
+      align-items: start;
+    }
 
     &__animate_circles {
-      width: 50%;
+      width: 60%;
       text-align: center;
+      margin-top: 100px;
+      @media (max-width: 1300px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        flex-direction: column;
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+      }
     }
 
     &__right {
       //text-align: center;
-      width: 30%;
+      width: 40%;
       //vertical-align: middle;
+      @media (max-width: 1000px) {
+        width: 80%;
+      }
+      @media(max-width: 1300px) {
+        width: 70%;
+      }
+
+      &__mobile_label {
+        display: none;
+        background: #caf6ff;
+        color: #00A7C2;
+        position: relative;
+        width: 60%;
+        text-align: center;
+        box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
+        border-radius: 10px;
+        padding: 14px;
+        @media (max-width: 1300px) {
+          display: block;
+          align-self: center;
+          margin-bottom: 50px;
+        }
+        @media (max-width: 700px) {
+          align-self: start;
+          margin-bottom: 50px;
+        }
+      }
 
       &__help {
         margin: 145px 0 0 0;
@@ -767,6 +816,10 @@ table {
         box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
         border-radius: 10px;
         padding: 14px;
+        @media (max-width: 1300px) {
+          display: none;
+          //margin: 54px 0 0 0;
+        }
       }
 
       &__label {
@@ -776,6 +829,9 @@ table {
         line-height: 120%;
         color: #505D64;
         margin: 14px 0 0 0;
+        @media (max-width: 500px) {
+          font-size: 40px;
+        }
       }
 
       &__text {
@@ -784,6 +840,12 @@ table {
         line-height: 150%;
         margin: 255px 0 0 0;
         color: #505D64;
+        @media (max-width: 700px) {
+          margin: 172px 0 0 0;
+        }
+        @media (max-width: 1300px) {
+          margin: 0 0 0 0;
+        }
       }
 
       &__button {
@@ -846,28 +908,44 @@ table {
 .additional-services_wrapper {
   background-color: #F8F9FD;
   margin-bottom: 100px;
-  height: 600px;
 
 }
 
 .additional-services__body {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 40px;
+
+  };
 }
 
 .additional-services__cards {
   display: flex;
   flex-direction: column;
+  @media (max-width: 1200px) {
+    margin: 100px 0 0 0;
+
+  }
 
   .cards-card {
     display: flex;
     background: #FFFFFF;
     border: 1px solid rgba(0, 167, 194, 0.4);
     border-radius: 30px;
-    width: 570px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 20px;
+    @media (max-width: 1200px) {
+      align-self: center;
+      flex-direction: column;
+      padding: 30%;
+    }
+
 
     &__image {
       align-self: center;
@@ -882,6 +960,12 @@ table {
       align-self: center;
       color: #829FAF;
       max-width: 100px;
+      @media (max-width: 1200px) {
+        max-width: 160px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+
+      }
     }
 
     &__cost {
@@ -894,6 +978,10 @@ table {
       align-self: center;
       color: #505D64;
       padding: 0px 20px 0px 30px;
+
+      @media (max-width: 1200px) {
+        padding: 0 20px 10px 20px;
+      }
     }
 
     &__button {
@@ -903,9 +991,14 @@ table {
         width: 151px;
         height: 50px;
         background: #00A7C2;
+        margin-right: 10px;
         border-radius: 10px;
         color: #FFFFFF;
         border: none;
+        @media (max-width: 1200px) {
+          margin-right: 0px;
+
+        }
       }
 
       .additional__service_card__btn:hover {
@@ -933,6 +1026,10 @@ table {
 
 .additional-services__block {
 
+  @media (max-width: 600px) {
+    align-items: flex-start;
+  }
+
   .block__main-head {
     background-color: #caf6ff;
     box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
@@ -958,6 +1055,12 @@ table {
     line-height: 120%;
     color: #505D64;
     max-width: 480px;
+    @media (max-width: 500px) {
+      font-size: 30px;
+    }
+    @media (max-width: 1200px) {
+      margin-top: 30px;
+    }
 
   }
 
@@ -1003,6 +1106,7 @@ table {
 .binta_questions {
   margin: 100px 0 100px 0;
 
+
   &__help {
     background: #caf6ff;
     color: #00A7C2;
@@ -1012,6 +1116,10 @@ table {
     box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
     border-radius: 10px;
     padding: 13px;
+    @media (max-width: 850px) {
+      width:95%;
+
+    }
   }
 
   &__main_questions {
@@ -1020,6 +1128,10 @@ table {
     line-height: 120%;
     color: #505D64;
     padding: 10px 0 50px 0;
+    @media (max-width: 390px){
+      font-size: 40px ;
+      max-width: 200px;
+    }
   }
 
   &__cards {
@@ -1031,7 +1143,12 @@ table {
       padding: 15px 30px 15px 40px;
       margin-bottom: 15px;
       cursor: pointer;
-      justify-content: space-between;
+
+      &__units {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
 
       &__question {
@@ -1040,16 +1157,27 @@ table {
         font-size: 27px;
         line-height: 42px;
         color: #505D64;
+        width: 94%;
+        @media(max-width: 380px){
+          font-size: 20px;
+          line-height: 25px;
+          max-width: 115px;
+        }
       }
 
       &__text {
         display: none;
-        width: 1048px;
+        width: 95%;
         font-style: normal;
         font-weight: 400;
         font-size: 23px;
         line-height: 170%;
         color: #7F8B97;
+        @media (max-width: 380px) {
+          line-height: 22px;
+          font-size: 19px;
+
+        }
       }
 
       &__plus_minus {
@@ -1061,7 +1189,6 @@ table {
         height: 36px;
         font-size: 1.5em;
         position: relative;
-        float: right;
 
         code {
           position: absolute;
@@ -1099,8 +1226,11 @@ table {
   margin: 100px 0 200px 0;
 
   &__background {
-    position: relative;
-
+    //position: absolute;
+    background: url("/img/free_frame.png") center bottom/cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
     img {
       width: 100%;
       height: 100%;
@@ -1113,8 +1243,6 @@ table {
   display: flex;
   font-style: normal;
   color: #FFFFFF;
-  position: absolute;
-  top: 0;
 
   &__text {
     width: 40%;
@@ -1143,7 +1271,7 @@ table {
 
   &__form {
     width: 50%;
-    padding: 60px 0 0 0;
+    padding: 30px 0 0 0;
 
     &__input {
       padding: 3px 0 14px 0;
@@ -9087,10 +9215,16 @@ html, body {
 .binta_smartphone_info__image {
   position: relative;
   z-index: 5;
+  width: 100%;
+  height: 100%;
 }
 
 .binta_smartphone_info__block__right {
-  margin-left: 200px
+  margin-left: 100px;
+  @media (max-width: 700px) {
+    margin-left: 5px;
+    width: 100%;
+  }
 }
 
 .binta_get_started_btn:hover {
