@@ -19,19 +19,23 @@ footer{
     position: relative;
     padding: 5px 0px;
 
-    @media(max-width:992px){
-      min-width: 80px;
+    @media (max-width: 1250px){
+      flex-direction: column-reverse;
     }
-    @media(max-width:768px){
 
-      min-width: 50px;
-    }
-    @media(max-width:922px){
-      display: block;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-    }
+    //@media(max-width:992px){
+    //  min-width: 80px;
+    //}
+    //@media(max-width:768px){
+    //
+    //  min-width: 50px;
+    //}
+    //@media(max-width:922px){
+    //  display: block;
+    //  top: 0;
+    //  left: 0;
+    //  min-width: 100%;
+    //}
 
   }
 
@@ -40,6 +44,10 @@ footer{
   &__main {
 
     padding: 72px 0px 0px 0px;
+
+    @media (max-width: 1250px) {
+      padding-left: 47px;
+    }
   }
 
 
@@ -63,21 +71,21 @@ footer{
   &__menu {
     display: flex;
     flex: 0 1 auto;
-    @media(max-width:992px){
+    //@media(max-width:992px){
+    //
+    //  margin: 0px 0px 0px 80px;
+    //}
 
-      margin: 0px 0px 0px 80px;
-    }
-
-    @media(max-width:768px){
-
-      margin: 0px 0px 0px 0px;
-    }
-    @media(max-width:630px){
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
+    //@media(max-width:768px){
+    //
+    //  margin: 0px 0px 0px 0px;
+    //}
+    //@media(max-width:630px){
+    //  display: block;
+    //  top: 0;
+    //  left: 0;
+    //  width: 100%;
+    //}
   }
 }
 
@@ -86,6 +94,10 @@ footer{
   display: flex;
   flex-direction: column;
   // .contacts-footer__item
+
+  @media (max-width: 1250px){
+        align-items: center;
+  }
 
   &__item {
     padding: 2px;
@@ -108,6 +120,12 @@ footer{
 
 .menu-footer {
 
+  @media (max-width: 1250px){
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+  }
+
   // .menu-footer__column
 
   &__column {
@@ -118,10 +136,9 @@ footer{
     margin: 0px 40px;
     padding: 5px 0px;
     position: relative;
-    @media(max-width:630px){
-      display: block;
-      top: 0;
-      left: 0;
+    @media(max-width:1250px){
+      padding-top: 40px;
+
     }
 
   }
@@ -138,12 +155,12 @@ footer{
     &:not(:last-child){
       padding: 0px 0px 0px 15px;
     }
-    @media(max-width:992px){
-      font-size: 24px;
-    }
-    @media(max-width:768px){
-      font-size: 20px;
-    }
+    //@media(max-width:992px){
+    //  font-size: 24px;
+    //}
+    //@media(max-width:768px){
+    //  font-size: 20px;
+    //}
     &:hover {
       color: gray;
     }
@@ -171,4 +188,10 @@ a{
 }
 .footer__icons{
   display: flex;
+}
+
+.icons-box {
+  @media (max-width:1250px){
+  padding: 0 5px 0 5px;
+}
 }
