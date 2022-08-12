@@ -338,7 +338,7 @@ table {
 // Control Binta start
 
 .control-stock {
-  margin-top: 180px;
+  margin-top: 120px;
 }
 
 .control {
@@ -375,10 +375,16 @@ table {
   font-weight: 600;
   font-size: 40px;
   line-height: 130%;
+
   color: #505D64;
-  width: 500px;
+  @media (max-width: 1230px) {
+    text-align: center;
+  }
+  @media (max-width: 1000px) {
+    width: 500px;
+    text-align: unset;
+  }
   @media (max-width: 660px) {
-    font-size: 30px;
     margin-left: -50px;
   }
   @media (max-width: 600px) {
@@ -389,6 +395,14 @@ table {
     width: 250px;
     margin-left: -50px;
   }
+  @media (max-width: 460px) {
+    font-size: 25px;
+    max-width: 260px !important;
+  }
+  @media (max-width: 780px) {
+    margin-left: -50px;
+    max-width: 300px;
+  }
 }
 
 .control__text__e-commerce {
@@ -398,15 +412,25 @@ table {
   font-size: 40px;
   line-height: 130%;
   color: #505D64;
+  @media (max-width: 1230px) {
+    text-align: center;
+  }
+  @media (max-width: 1000px) {
+    text-align: unset;
+  }
   @media (max-width: 660px) {
     width: 320px;
-    font-size: 30px;
     margin-left: -50px;
 
 
   }
-  @media (max-width: 480px) {
-    width: 250px;
+  @media (max-width: 460px) {
+    font-size: 25px;
+    max-width: 260px !important;
+  }
+  @media (max-width: 780px) {
+    margin-left: -50px;
+    max-width: 300px;
   }
 }
 
@@ -422,9 +446,14 @@ table {
 
 .control__body_block_table-sale {
   width: 50%;
-  padding: 135px 0px 0px 35px;
+  padding: 135px 0 0 35px;
   @media (max-width: 1230px) {
     align-self: center;
+    padding: 135px 0 0 45px;
+  }
+  @media (max-width: 480px) {
+    margin-left: -46px;
+
   }
 
 }
@@ -435,11 +464,11 @@ table {
   display: flex;
   position: relative;
   padding-left: 30px;
-  @media (max-width: 1230px) {
+  @media (max-width: 1000px) {
     width: 500px;
   }
   @media (max-width: 780px) {
-    margin-left: -50px;
+    margin-left: -60px;
   }
   @media (max-width: 660px) {
     flex-direction: column;
@@ -539,13 +568,17 @@ table {
   @media (max-width: 1230px) {
     margin-left: -28px;
   }
+  @media (max-width: 480px) {
+    margin-left: 0;
+
+  }
 }
 
 // Control Binta end
 .website-builder {
-  margin-top: 180px;
+  margin-top: 120px;
   @media (max-width: 660px) {
-    margin-top: 70px;
+    margin-top: 120px;
   }
 }
 
@@ -579,7 +612,6 @@ table {
   max-width: 460px;
   @media (max-width: 660px) {
     width: 320px;
-    font-size: 30px;
   }
   @media (max-width: 480px) {
     width: 250px;
@@ -627,6 +659,10 @@ table {
   width: 50%;
   @media (max-width: 1230px) {
     align-self: center;
+    //padding-left:0 ;
+  }
+  @media (max-width: 480px) {
+    margin-left: -39px;
   }
 }
 
@@ -637,7 +673,7 @@ table {
 .modern-store {
   margin-top: 120px;
   @media (max-width: 660px) {
-    margin-top: 70px;
+    margin-top: 120px;
   }
 }
 
@@ -651,7 +687,7 @@ table {
 }
 
 .manufacturing-control {
-  margin-top: 130px;
+  margin-top: 120px;
 }
 
 .manufacturing-control__text {
@@ -661,23 +697,32 @@ table {
   line-height: 130%;
   color: #505D64;
   width: 570px;
+  @media (max-width: 1230px) {
+    text-align: center;
+  }
+  @media (max-width: 1000px) {
+    text-align: unset;
+  }
   @media (max-width: 780px) {
-    margin-left: -40px;
+    margin-left: -50px;
     max-width: 300px;
   }
   @media (max-width: 660px) {
     width: 320px;
-    font-size: 30px;
     margin-left: -50px;
   }
   @media (max-width: 460px) {
-    width: 260px;
+    font-size: 25px;
+    max-width: 267px;
+  }
+  @media (max-width: 480px) {
+    width: 250px;
 
   }
 }
 
 .financial-accounting {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 
 #control__table-vsbl-dspl0 {
@@ -708,14 +753,23 @@ table {
   line-height: 130%;
   color: #505D64;
   width: 550px;
+  @media (max-width: 480px) {
+    width: 250px;
+  }
+  @media (max-width: 1230px) {
+    text-align: center;
+
+  }
+  @media (max-width: 1000px) {
+    text-align: unset;
+  }
   @media (max-width: 780px) {
-    margin-left: -40px;
-    font-size: 25px;
+    margin-left: -50px;
     max-width: 350px;
   }
   @media (max-width: 460px) {
-    font-size: 24px;
-    max-width: 200px;
+    font-size: 25px;
+    max-width: 267px;
   }
 
 }
@@ -745,6 +799,10 @@ table {
   margin-top: 45px;
   width: 100%;
   height: 82%;
+}
+
+.block_form__label {
+  text-align: center;
 }
 
 .binta_smartphone_info {
@@ -1024,6 +1082,7 @@ table {
   margin-right: 20px;
   @media (max-width: 1230px) {
     align-self: center;
+    margin-right: 0;
   }
 }
 
@@ -1117,6 +1176,8 @@ table {
     width: 60%;
     height: auto;
   }
+
+
   @media (max-width: 550px) {
     width: unset;
   }
@@ -1138,9 +1199,13 @@ table {
       flex-direction: column;
       align-items: center;
 
+      *, ::after, ::before {
+        box-sizing: border-box !important;
+      }
+
       .input_mobile {
         padding: 10px 0 0 0;
-        width: 65%;
+        width: 68%;
         @media (max-width: 700px) {
           width: 80%;
         }
@@ -1158,12 +1223,12 @@ table {
 
         input {
           background: rgba(255, 255, 255, 0.2);
-          border: 2px solid rgba(255, 255, 255, 0.2);
+          border: 1px;
           border-radius: 10px;
           width: 100%;
           color: #ffffff;
           outline: none;
-          height: 27px;
+          height: 45px;
 
           &:focus {
             border: 3px solid #00DCFF !important;
@@ -1194,6 +1259,34 @@ table {
 
 .binta_get_started_btn__mobile:hover {
   background: #d1efff;
+}
+
+.mobile__form__policy {
+  width: 85%;
+  margin: auto;
+  padding: 0 0 25px 0;
+  text-align: center;
+  color: #C8D1E1;
+  line-height: 150%;
+  font-size: 12px;
+  max-width: 420px;
+
+  a {
+    color: #C8D1E1;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #FFFFFF !important;
+  }
+}
+
+.label__text {
+  display: -webkit-box;
+}
+
+.label__text_block {
+  width: 80%;
 }
 
 .form-block__subscribe_mobile {
@@ -1251,7 +1344,6 @@ table {
 }
 
 .form-label__mobile {
-  padding: 25px 0 0 0;
   font-weight: 600;
   font-size: 30px;
   line-height: 110%;
@@ -1262,6 +1354,9 @@ table {
 
   color: #FFFFFF;
   @media (max-width: 450px) {
+    font-size: 25px;
+  }
+  @media (max-width: 350px) {
     font-size: 20px;
   }
 }
@@ -1394,6 +1489,45 @@ table {
   }
 }
 
+.approved_image {
+  margin: auto;
+}
+
+
+.year__cost {
+  display: flex;
+}
+
+.approved_button {
+  width: 178px;
+  height: 55px;
+
+  background: #00A7C2;
+  border-radius: 10px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin: auto;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+
+}
+
+
+.bold__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 120%;
+  /* or 48px */
+
+  color: #505D64;
+}
+
 .binta_free_demo {
   margin: 100px 0 200px 0;
 
@@ -1409,6 +1543,10 @@ table {
       height: 100%;
 
     }
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
   }
 }
 
@@ -1416,10 +1554,19 @@ table {
   display: flex;
   font-style: normal;
   color: #FFFFFF;
+  @media (max-width: 1100px) {
+    display: none;
+  }
 
   &__text {
-    width: 40%;
-    padding: 103px 230px 0 124px;
+    width: 52%;
+    padding: 80px 0 0 106px;
+    @media (max-width: 1200px) {
+      width: 50%;
+    }
+    @media (max-width: 1130px) {
+      width: 48%;
+    }
 
 
     /* or 63px */
@@ -1438,16 +1585,21 @@ table {
       font-size: 20px;
       margin-top: 25px;
       line-height: 150%;
+      max-width: 400px;
 
     }
   }
 
   &__form {
-    width: 50%;
+    width: 40%;
     padding: 30px 0 0 0;
+    @media (max-width: 1100px) {
+      display: none;
+    }
 
     &__input {
       padding: 3px 0 14px 0;
+
     }
 
     &__button {
@@ -1472,9 +1624,8 @@ table {
 
     input[type="text"] {
       border-radius: 10px;
-      border: none;
       height: 45px;
-      border: 2px solid transparent;
+      border: 2px solid #565e65;
       width: 350px;
       outline: none;
       padding: 0 0 0 7px;
@@ -1526,11 +1677,18 @@ table {
     }
 
     &__privacy_policy {
-      padding: 28px 65px 0 0;
+      padding: 28px 65px 15px 0;
       text-align: center;
       color: #C8D1E1;
       line-height: 150%;
       font-size: 12px;
+
+      @media (max-width: 1200px) {
+        padding: 28px 34px 15px 0;
+      }
+      @media (max-width: 1130px) {
+        padding: 28px 0 15px 0;
+      }
 
       a {
         color: #C8D1E1;
@@ -1544,6 +1702,231 @@ table {
   }
 }
 
+.binta_free_demo__main_block__form__input input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #565e65; /* цвет вашего фона */
+  -webkit-text-fill-color: #FFFFFF; /* цвет текста */
+}
+
+.binta_free_demo__mobile {
+  display: none;
+  background: #00A7C2;
+  margin: 0 auto;
+
+  border-radius: 50px;
+  width: 330px;
+  height: 1392px;
+
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.binta_free_demo__mobile__form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.union-items__subscribe {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 75%;
+  padding: 20px 0 20px 0;
+}
+
+.demo__subscribe_mobile {
+  width: unset;
+}
+
+.binta_call_back_form__mobile {
+  width: 100%;
+  height: 100%;
+}
+
+.demo_mobile_btn {
+  margin: 0 !important;
+  width: 45% !important;
+}
+
+.binta_free_demo_mobile_button {
+  margin: 10px 0 25px 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+
+.binta_free_demo__main_block__form__subscribe__mobile {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 90%;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label::before {
+    content: " ";
+    display: inline-block;
+    text-indent: 0px;
+    width: 20px;
+    height: 20px;
+    background: #29323a;
+    border: 2px solid #FFFFFF;
+    border-radius: 0.25em;
+    vertical-align: middle;
+    margin-inline: 10px;
+  }
+
+  input:checked + label:before {
+    content: '\2713';
+    font-size: large;
+    color: #29323a;
+    background-color: #FFFFFF;
+  }
+}
+
+.free_demo_mobile {
+  width: 78%;
+
+  input {
+    width: 97%;
+  }
+}
+
+.free_demo_mobile input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #565e65;
+  -webkit-text-fill-color: #FFFFFF;
+}
+
+.union_items__mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0 0 0;
+  width: 100%;
+  height: auto;
+
+  input[type="text"] {
+    border-radius: 10px;
+    border: none;
+    height: 45px;
+    border: 2px solid #565e65;
+    outline: none;
+    background-color: #565e65;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    &:focus {
+      border: 2px solid #00DCFF;
+    }
+  }
+
+  label {
+    text-align: unset !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    code {
+      font-style: normal;
+      font-size: 16px;
+      line-height: 17px;
+      padding-left: 45px;
+      /* or 21px */
+
+
+      color: #FFFFFF;
+    }
+  }
+
+}
+
+.privacy_demo_mobile {
+  padding: 38px 0px 0 0 !important;
+  text-align: center;
+  max-width: 270px !important;
+}
+
+.binta_free_demo__main_block__form__text__mobile {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110%;
+  padding-top: 75px;
+  width: 100%;
+  /* or 33px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+
+  @media (max-width: 270px) {
+    font-size: 25px;
+
+  }
+}
+
+.binta_free_demo__mobile__text__demo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 115%;
+  /* or 41px */
+
+
+  color: #FFFFFF;
+
+  @media (max-width: 360px) {
+    font-size: 30px;
+  }
+  @media (max-width: 300px) {
+    font-size: 26px;
+  }
+  @media (max-width: 280px) {
+    font-size: 22px;
+  }
+  @media (max-width: 240px) {
+    font-size: 20px;
+  }
+}
+
+.binta_free_demo__mobile__text__help {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+
+  color: #FFFFFF;
+}
+
+.binta_free_demo__mobile__text {
+  padding: 50px 29px;
+}
+
 .start_input {
   padding: 10px 6% 10px 5%;
 }
@@ -1552,6 +1935,12 @@ table {
   display: flex;
   justify-content: space-between;
   padding: 10px 33px 10px 33px;
+}
+
+.form-block__label_mobile {
+  padding: 25px 0 0 0;
+  width: 75%;
+
 }
 
 .binta_get_demo_btn {
@@ -2025,8 +2414,58 @@ form .binta_call_back_form_btn {
   cursor: pointer;
 }
 
+.modal__shop__button {
+  width: 100%;
+  height: 55px;
+  border-radius: 10px !important;
+}
+
 .users_counter_block {
   width: 60px;
+}
+
+.dialog__input {
+  margin: 0;
+  width: unset;
+
+  label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #829FAF;
+  }
+
+  label::before {
+    content: " ";
+    display: inline-block;
+    text-indent: 0px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #829FAF;
+    border-radius: 0.25em;
+    vertical-align: middle;
+    margin-inline: 10px;
+  }
+
+  input:checked + label:before {
+    content: '\2713';
+    font-size: large;
+    color: #ffffff;
+    background-color: #829FAF;
+  }
+}
+
+.privacy__dialog {
+  padding: 0;
+
+  a:hover {
+    color: #829FAF !important;
+  }
 }
 
 .additional__service_card {
@@ -2098,6 +2537,19 @@ form .binta_call_back_form_btn {
   box-shadow: none;
 }
 
+.header__dialog_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110%;
+  /* identical to box height, or 33px */
+
+  align-self: normal;
+  letter-spacing: -0.01em;
+
+  color: #505D64;
+}
+
 .modal_form_callback {
   display: none;
   position: fixed;
@@ -2139,17 +2591,100 @@ form .binta_call_back_form_btn {
   padding: 10px;
   background: #FFFFFF;
   box-shadow: unset;
+
+  *, ::after, ::before {
+    box-sizing: border-box !important;
+  }
+
+  label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #829FAF;
+  }
+
+  input {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #505D64;
+
+  }
+}
+
+.dialog__units__items {
+  display: flex;
+  justify-content: space-between;
+  //flex-direction: column;
 }
 
 
 .modal_information_manager_callback .modal-content {
-  margin: 8% auto;
-  width: 88%;
+  margin: 1% auto;
+  width: 90%;
+
+
 }
 
+.success_button {
+  background: #00A7C2;
+  border-radius: 10px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin: auto;
+  width: 40%;
+  height: 47px;
 
-.modal_information_manager_callback .modal-content button {
-  margin-top: 20px;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+}
+
+.button_consultation {
+  width: 55% !important;
+  height: 38px;
+  background: #00A7C2;
+  border-radius: 10px !important;
+}
+
+.modal_information_manager_callback {
+  span::before {
+    content: unset !important;
+    position: unset !important;
+    left: unset !important;
+  }
+}
+
+.default__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  color: #505D64;
+}
+
+.trial__dialog__text {
+  margin: auto 0;
+
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #00A7C2;
+  }
 }
 
 .image_modal .modal-content {
@@ -2550,13 +3085,10 @@ form .binta_call_back_form_btn {
     width: 60% !important;
   }
 
-  .binta_call_back_form_btn {
-    width: 40%;
-  }
 
   input:-webkit-autofill {
-    -webkit-box-shadow: none;
-    -webkit-text-fill-color: #495057;
+    -webkit-box-shadow: inset 0 0 0 50px #ffffff;
+    -webkit-text-fill-color: #505D64;
   }
 
   label {
@@ -2575,15 +3107,6 @@ form .binta_call_back_form_btn {
     border-radius: 10px;
   }
 
-  input:not(:placeholder-shown) {
-    /* You need to add a placeholder to your fields. For example: <input "placeholder=" "/> */
-    background: #E8F0FE;
-  }
-
-  /* If input is empty */
-  input:placeholder-shown {
-    background: #FFFFFF;
-  }
 }
 
 
@@ -9520,6 +10043,10 @@ html, body {
   box-shadow: 0px 0px 6px -2px #111;
   padding: 4px 0px;
   color: #FFFFFF;
+}
+
+.basket__year {
+  display: none;
 }
 
 .sale_image {
