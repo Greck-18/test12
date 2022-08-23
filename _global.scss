@@ -26,7 +26,10 @@ body {
   @media (max-width: 480px) {
     margin-left: -50px !important;
     width: 100%;
-
+  }
+  @media (max-width: 1230px) {
+    margin-top: 70px !important;
+    margin-bottom:70px !important;
   }
 }
 
@@ -72,21 +75,25 @@ body {
   line-height: 120%;
   color: #505D64;
   max-width: 580px;
+  @media (max-width: 350px) {
+    font-size: 30px !important;
+  }
   @media (max-width: 1300px) {
     margin: 0 auto;
     max-width: 680px;
+    font-size:43px;
+    text-align: center;
   }
   @media (max-width: 920px) {
     font-size: 40px;
     max-width: 480px;
   }
   @media (max-width: 660px) {
-    font-size: 30px;
     max-width: 440px;
     margin-left: 70px;
+    text-align: unset;
   }
   @media (max-width: 420px) {
-    font-size: 26px;
   }
 
 }
@@ -145,6 +152,9 @@ table {
   font-style: normal;
   position: relative;
   margin-bottom: 200px;
+  @media (max-width: 1230px) {
+    margin-bottom: 0!important;
+  }
 
   &__help {
     background: #caf6ff;
@@ -152,7 +162,9 @@ table {
     border-radius: 10px;
     left: 36%;
     position: relative;
-    width: 27%;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 500;
     text-align: center;
     @media (max-width: 680px) {
       min-width: 200px;
@@ -178,12 +190,16 @@ table {
     text-align: center;
     color: #505D64;
     @media (max-width: 770px) {
-      font-size: 40px;
+      font-size: 43px;
+      max-width: 480px;
+      margin:0 auto;
     }
     @media (max-width: 450px) {
       text-align: left;
-      font-size: 36px;
-
+      font-size: 43px;
+    }
+    @media (max-width: 350px) {
+      font-size: 30px;
     }
   }
 
@@ -200,8 +216,9 @@ table {
     @media (max-width: 1230px) {
       flex-direction: column;
       align-items: center;
-
-
+    }
+    @media (max-width: 1230px) {
+      margin-top: 30px!important;
     }
 
 
@@ -314,7 +331,7 @@ table {
 
 .arrow3 {
   position: absolute;
-  bottom: -28%;
+  bottom: -18%;
   left: 38%;
   @media (max-width: 1230px) {
     bottom: -6%;
@@ -324,7 +341,7 @@ table {
 
 .arrow4 {
   position: absolute;
-  bottom: -28%;
+  bottom: -18%;
   left: 62%;
   @media (max-width: 1230px) {
     display: none;
@@ -338,13 +355,19 @@ table {
 // Control Binta start
 
 .control-stock {
-  margin-top: 120px;
+  margin-top: 90px;
+  @media (max-width: 1230px) {
+    margin-top: 60px!important;
+  }
 }
 
 .control {
-  margin-top: 256px;
+  margin-top: 150px;
   @media (max-width: 660px) {
     //margin-right: 400px;
+  }
+  @media (max-width: 1230px) {
+    margin-top: 70px!important;
   }
 }
 
@@ -353,10 +376,18 @@ table {
   box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
   border-radius: 10px;
   width: 242px;
+  margin-bottom: 15px;
   height: 46px;
   @media (max-width: 1230px) {
-    margin: 0 auto;
   }
+  @media (max-width: 500px) {
+    float: right;
+
+  }
+}
+
+.basket__year__total {
+  display: flex;
 }
 
 .control__title {
@@ -380,12 +411,15 @@ table {
   @media (max-width: 1230px) {
     text-align: center;
   }
+  @media (max-width: 350px) {
+    font-size: 30px !important;
+  }
   @media (max-width: 1000px) {
-    width: 500px;
     text-align: unset;
   }
   @media (max-width: 660px) {
     margin-left: -50px;
+    text-align: unset !important;
   }
   @media (max-width: 600px) {
     max-width: 400px;
@@ -393,15 +427,15 @@ table {
   }
   @media (max-width: 480px) {
     width: 250px;
-    margin-left: -50px;
+    margin-left: -88px;
   }
   @media (max-width: 460px) {
-    font-size: 25px;
+    font-size:40px;
     max-width: 260px !important;
   }
   @media (max-width: 780px) {
-    margin-left: -50px;
-    max-width: 300px;
+    max-width: 480px;
+    text-align: center;
   }
 }
 
@@ -412,6 +446,9 @@ table {
   font-size: 40px;
   line-height: 130%;
   color: #505D64;
+  @media (max-width: 350px) {
+    font-size: 30px !important;
+  }
   @media (max-width: 1230px) {
     text-align: center;
   }
@@ -421,16 +458,17 @@ table {
   @media (max-width: 660px) {
     width: 320px;
     margin-left: -50px;
+    text-align: unset !important;
 
 
   }
-  @media (max-width: 460px) {
-    font-size: 25px;
+  @media (max-width: 480px) {
     max-width: 260px !important;
+    margin-left:-89px;
   }
   @media (max-width: 780px) {
-    margin-left: -50px;
-    max-width: 300px;
+    text-align: center;
+    max-width: 480px;
   }
 }
 
@@ -446,10 +484,10 @@ table {
 
 .control__body_block_table-sale {
   width: 50%;
-  padding: 135px 0 0 35px;
+  padding: 90px 0 0 35px;
   @media (max-width: 1230px) {
     align-self: center;
-    padding: 135px 0 0 45px;
+    //padding: 40px 0 0 45px;
   }
   @media (max-width: 480px) {
     margin-left: -46px;
@@ -486,7 +524,7 @@ table {
   line-height: 150%;
   color: #505D64;
   width: 50%;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   @media (max-width: 1230px) {
     width: 40%;
   }
@@ -524,7 +562,6 @@ table {
 }
 
 .control__body-block-table__financial {
-  margin-top: 45px;
   width: 50%;
   @media (max-width: 1230px) {
     margin: 0 auto;
@@ -533,9 +570,11 @@ table {
 
 .control__image {
   width: 50%;
+  height: 100%;
   margin: 0 auto;
   @media (max-width: 1230px) {
     margin: 0 auto;
+    margin-top:30px!important;
   }
   @media (max-width: 660px) {
     //width: 600px;
@@ -550,6 +589,7 @@ table {
     width: 100%;
     @media (max-width: 1230px) {
       margin: 0 auto;
+      padding-top: 0 !important;
     }
     @media (max-width: 480px) {
       width: 100%;
@@ -576,9 +616,12 @@ table {
 
 // Control Binta end
 .website-builder {
-  margin-top: 120px;
+  margin-top: 90px;
   @media (max-width: 660px) {
     margin-top: 120px;
+  }
+  @media (max-width: 1230px) {
+    margin-top:60px!important;
   }
 }
 
@@ -590,7 +633,6 @@ table {
 }
 
 .website-builder__body-block-table {
-  margin-top: 45px;
   width: 50%;
   @media (max-width: 1230px) {
     align-self: center;
@@ -610,12 +652,19 @@ table {
   line-height: 130%;
   color: #505D64;
   max-width: 460px;
+  margin-bottom: 35px;
   @media (max-width: 660px) {
     width: 320px;
   }
   @media (max-width: 480px) {
     width: 250px;
-    margin-left: -50px;
+    margin-left: -88px;
+  }
+  @media (max-width: 1230px) {
+    margin-bottom:30px!important;
+  }
+  @media (max-width: 350px) {
+    font-size: 30px;
   }
 }
 
@@ -637,6 +686,9 @@ table {
     width: 320px;
 
   }
+  @media (max-width: 1230px) {
+    margin: 0 100px 30px 0 !important;
+  }
   @media (max-width: 480px) {
     width: 220px;
 
@@ -655,7 +707,6 @@ table {
 
 .modern__body_block_table-sale {
   padding-left: 35px;
-  margin-top: 40px;
   width: 50%;
   @media (max-width: 1230px) {
     align-self: center;
@@ -664,6 +715,12 @@ table {
   @media (max-width: 480px) {
     margin-left: -39px;
   }
+  @media (max-width: 800px) {
+    width:70%
+  }
+  @media (max-width: 770px) {
+    width:50%;
+  }
 }
 
 .mrp_image {
@@ -671,9 +728,9 @@ table {
 }
 
 .modern-store {
-  margin-top: 120px;
-  @media (max-width: 660px) {
-    margin-top: 120px;
+  margin-top: 90px;
+  @media (max-width: 1230px) {
+    margin-top: 60px !important;
   }
 }
 
@@ -687,7 +744,10 @@ table {
 }
 
 .manufacturing-control {
-  margin-top: 120px;
+  margin-top: 90px;
+  @media (max-width: 1230px) {
+    margin-top:60px !important;
+  }
 }
 
 .manufacturing-control__text {
@@ -697,6 +757,10 @@ table {
   line-height: 130%;
   color: #505D64;
   width: 570px;
+  margin-bottom: 35px;
+  @media (max-width: 350px) {
+    font-size: 30px !important;
+  }
   @media (max-width: 1230px) {
     text-align: center;
   }
@@ -704,25 +768,29 @@ table {
     text-align: unset;
   }
   @media (max-width: 780px) {
-    margin-left: -50px;
-    max-width: 300px;
+    max-width: 350px;
+    text-align: center;
   }
   @media (max-width: 660px) {
     width: 320px;
+    text-align: unset !important;
     margin-left: -50px;
   }
   @media (max-width: 460px) {
-    font-size: 25px;
     max-width: 267px;
   }
   @media (max-width: 480px) {
     width: 250px;
+    margin-left: -89px;
 
   }
 }
 
 .financial-accounting {
-  margin-top: 120px;
+  margin-top: 90px;
+  @media (max-width: 1230px) {
+    margin-top: 60px!important;
+  }
 }
 
 #control__table-vsbl-dspl0 {
@@ -752,9 +820,14 @@ table {
   font-size: 40px;
   line-height: 130%;
   color: #505D64;
+  margin-bottom: 30px;
   width: 550px;
+  @media (max-width: 350px) {
+    font-size: 30px !important;
+  }
   @media (max-width: 480px) {
     width: 250px;
+    margin-left:-89px !important;
   }
   @media (max-width: 1230px) {
     text-align: center;
@@ -764,11 +837,15 @@ table {
     text-align: unset;
   }
   @media (max-width: 780px) {
-    margin-left: -50px;
-    max-width: 350px;
+    //margin-left: -88px;
+    text-align: center;
+    max-width: 336px;
+  }
+  @media (max-width: 660px) {
+    text-align: unset !important;
+    margin-left:-50px;
   }
   @media (max-width: 460px) {
-    font-size: 25px;
     max-width: 267px;
   }
 
@@ -796,7 +873,6 @@ table {
 
 .accounting_image {
   margin-bottom: 40px;
-  margin-top: 45px;
   width: 100%;
   height: 82%;
 }
@@ -806,7 +882,10 @@ table {
 }
 
 .binta_smartphone_info {
-  margin: 100px 0 180px 0;
+  margin: 120px 0 0 0;
+  @media (max-width: 1230px) {
+    margin: 70px 0 0 0 !important;
+  }
 
   &__block {
     display: flex;
@@ -823,7 +902,6 @@ table {
     &__animate_circles {
       width: 60%;
       text-align: center;
-      margin-top: 100px;
       @media (max-width: 1300px) {
         display: flex;
         flex-wrap: wrap;
@@ -868,11 +946,13 @@ table {
       }
 
       &__help {
-        margin: 145px 0 0 0;
+        margin: 90px 0 0 0;
         background: #caf6ff;
         color: #00A7C2;
         position: relative;
-        width: 60%;
+        width: 50%;
+        font-size: 17px;
+        font-weight: 500;
         text-align: center;
         box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
         border-radius: 10px;
@@ -889,9 +969,12 @@ table {
         float: left;
         line-height: 120%;
         color: #505D64;
-        margin: 14px 0 0 0;
+        margin: 15px 0 0 0;
         @media (max-width: 500px) {
           font-size: 40px;
+        }
+        @media (max-width: 1230px) {
+          margin-top: 30px!important;
         }
       }
 
@@ -899,18 +982,26 @@ table {
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
-        margin: 255px 0 0 0;
+        margin: 235px 0 0 0;
         color: #505D64;
         @media (max-width: 700px) {
           margin: 172px 0 0 0;
         }
-        @media (max-width: 1300px) {
-          margin: 0 0 0 0;
+        @media (max-width: 1230px)  {
+          margin-top:180px!important;
         }
+        //@media (max-width: 1300px) {
+        //  margin: 0 0 0 0;
+        //}
       }
 
       &__button {
-        padding-top: 30px;
+        padding-top: 40px;
+
+        @media (max-width: 1230px) {
+
+          padding-top:30px!important;
+        }
 
         .binta_get_tried_btn {
           background: #00A7C2;
@@ -963,7 +1054,7 @@ table {
 }
 
 .additional-services {
-  margin: 100px 0 100px 0;
+  margin: 70px 0 100px 0;
 }
 
 .additional-services_wrapper {
@@ -975,7 +1066,7 @@ table {
 .additional-services__body {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0 100px 0;
+  padding: 70px 0 70px 0;
   @media (max-width: 1200px) {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -987,9 +1078,11 @@ table {
 
 .additional-services__cards {
   display: flex;
+  width: 47%;
   flex-direction: column;
   @media (max-width: 1200px) {
     margin: 100px 0 0 0;
+    width:unset;
 
   }
 
@@ -998,19 +1091,26 @@ table {
     background: #FFFFFF;
     border: 1px solid rgba(0, 167, 194, 0.4);
     border-radius: 30px;
-    width: 100%;
+    width: 104%;
+    padding-top: 25px;
+    padding-bottom: 25px;
     height: 100%;
     margin-bottom: 20px;
     @media (max-width: 1200px) {
       align-self: center;
       flex-direction: column;
       padding: 30%;
+      width:100%;
+      height:100%;
     }
 
 
     &__image {
       align-self: center;
-      padding: 0px 20px 0px 20px;
+      padding: 0px 20px 0px 30px;
+      @media (max-width: 1200px){
+        padding:0;
+      }
     }
 
     &__text {
@@ -1038,10 +1138,13 @@ table {
       letter-spacing: -0.02em;
       align-self: center;
       color: #505D64;
+      width: 50%;
       padding: 0px 20px 0px 30px;
 
       @media (max-width: 1200px) {
         padding: 0 20px 10px 20px;
+        width: 100%;
+        text-align: center;
       }
     }
 
@@ -1052,7 +1155,7 @@ table {
         width: 151px;
         height: 50px;
         background: #00A7C2;
-        margin-right: 10px;
+        margin-right: 30px;
         border-radius: 10px;
         color: #FFFFFF;
         border: none;
@@ -1084,6 +1187,12 @@ table {
     align-self: center;
     margin-right: 0;
   }
+  @media (max-width: 800px) {
+    width:70%
+  }
+  @media (max-width: 770px) {
+    width:50%;
+  }
 }
 
 .additional-services__block {
@@ -1096,8 +1205,11 @@ table {
     background-color: #caf6ff;
     box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
     border-radius: 10px;
-    max-width: 90%;
-    height: 10%;
+    max-width: 80%;
+    height: 46px;
+    @media (max-width: 499px) {
+      height:68px;
+    }
 
     &__help {
       color: #00A7C2;
@@ -1117,6 +1229,7 @@ table {
     line-height: 120%;
     color: #505D64;
     max-width: 480px;
+    padding-top: 15px;
     @media (max-width: 500px) {
       font-size: 30px;
     }
@@ -1144,10 +1257,6 @@ table {
     max-width: 550px;
 
   }
-}
-
-.started-now {
-  margin-bottom: 300px;
 }
 
 .started-now__bg-image {
@@ -1200,7 +1309,7 @@ table {
       align-items: center;
 
       *, ::after, ::before {
-        box-sizing: border-box !important;
+        //box-sizing: border-box !important;
       }
 
       .input_mobile {
@@ -1325,6 +1434,7 @@ table {
   input:checked + label:before {
     content: '\2713';
     font-size: large;
+    text-align: center;
     color: #217D90;
     background-color: #FFFFFF;
   }
@@ -1342,6 +1452,7 @@ table {
 
   color: #FFFFFF;
 }
+
 
 .form-label__mobile {
   font-weight: 600;
@@ -1371,14 +1482,21 @@ table {
 }
 
 .binta_questions {
-  margin: 100px 0 100px 0;
+  margin: 265px 0 120px 0;
+  @media (max-width: 1230px){
+    margin:70px 0 80px 0 !important;
+  }
+
+  *, ::after, ::before {
+    box-sizing: border-box !important;
+  }
 
 
   &__help {
     background: #caf6ff;
     color: #00A7C2;
     position: relative;
-    width: 20%;
+    width: 25%;
     text-align: center;
     box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
     border-radius: 10px;
@@ -1394,7 +1512,7 @@ table {
     font-size: 55px;
     line-height: 120%;
     color: #505D64;
-    padding: 10px 0 50px 0;
+    padding: 15px 0 30px 0;
     @media (max-width: 390px) {
       font-size: 40px;
       max-width: 200px;
@@ -1490,7 +1608,6 @@ table {
 }
 
 .approved_image {
-  margin: auto;
 }
 
 
@@ -1529,7 +1646,11 @@ table {
 }
 
 .binta_free_demo {
-  margin: 100px 0 200px 0;
+  margin: 120px 0 0 0;
+
+  @media (max-width: 1230px) {
+    margin:70px 0 0 0 !important;
+  }
 
   &__background {
     //position: absolute;
@@ -1560,7 +1681,7 @@ table {
 
   &__text {
     width: 52%;
-    padding: 80px 0 0 106px;
+    padding: 100px 0 0 106px;
     @media (max-width: 1200px) {
       width: 50%;
     }
@@ -1576,6 +1697,7 @@ table {
       font-weight: 700;
       font-size: 55px;
       line-height: 115%;
+      max-width: 415px;
       color: #FFFFFF !important;
 
     }
@@ -1583,27 +1705,26 @@ table {
     &__help {
       font-weight: 400;
       font-size: 20px;
-      margin-top: 25px;
       line-height: 150%;
-      max-width: 400px;
+      max-width: 368px;
 
     }
   }
 
   &__form {
     width: 40%;
-    padding: 30px 0 0 0;
+    padding: 40px 0 0 0;
     @media (max-width: 1100px) {
       display: none;
     }
 
     &__input {
-      padding: 3px 0 14px 0;
+      padding: 3px 0 18px 0;
 
     }
 
     &__button {
-      margin: 10px 0 30px 0;
+      margin: 30px 0 40px 0;
     }
 
     .union_items {
@@ -1670,6 +1791,7 @@ table {
       input:checked + label:before {
         content: '\2713';
         font-size: large;
+        text-align: center;
         color: #29323a;
         background-color: #FFFFFF;
       }
@@ -1677,7 +1799,7 @@ table {
     }
 
     &__privacy_policy {
-      padding: 28px 65px 15px 0;
+      padding: 20px 65px 40px 0;
       text-align: center;
       color: #C8D1E1;
       line-height: 150%;
@@ -1798,6 +1920,7 @@ table {
   input:checked + label:before {
     content: '\2713';
     font-size: large;
+    text-align: center;
     color: #29323a;
     background-color: #FFFFFF;
   }
@@ -1814,6 +1937,14 @@ table {
 .free_demo_mobile input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #565e65;
   -webkit-text-fill-color: #FFFFFF;
+}
+.union_points {
+  @media (max-width: 660px) {
+    padding-bottom:30px !important;
+  }
+}
+.union_point_with_padding {
+   padding-bottom:0;
 }
 
 .union_items__mobile {
@@ -1947,10 +2078,12 @@ table {
   border: none;
   width: 174px;
   color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
   height: 55px;
   background: #00A7C2;
   border-radius: 10px;
-  margin: 15px 0 15px 120px;
+  margin: 0 0 0 120px;
   background-image: linear-gradient(-45deg, transparent 10%, transparent 40%, #17dbf180 20%, transparent 70%) !important;
   background-repeat: no-repeat !important;
   animation: blick-slide infinite 3s;
@@ -1979,6 +2112,11 @@ table {
 }
 
 .binta_prices {
+  margin-top: 120px;
+  @media (max-width: 1230px) {
+    margin-top:70px !important;
+  }
+
   *, ::after, ::before {
     box-sizing: border-box !important;
   }
@@ -2003,7 +2141,11 @@ table {
 
 .bonus_client_enable {
   align-self: center;
-  padding: 0 0 15px 0;
+  width: 100%;
+  //padding: 0 0 15px 0;
+  label.switch {
+    width: 100%;
+  }
 }
 
 
@@ -2214,7 +2356,7 @@ table {
 }
 
 .binta_prices__basket {
-  padding: 15px 18px 42px 18px;
+  padding: 15px 18px 19px 18px;
 }
 
 .technical_name {
@@ -2231,8 +2373,8 @@ table {
 }
 
 .basket_item {
-  /* height: 50px; */
-  padding-top: 20px;
+  height: 50px;
+  //padding-top: 20px;
   border-bottom: 1px solid #DBDFE0;
 
 }
@@ -2320,6 +2462,8 @@ table {
   margin-top: 20px;
   border-radius: 10px !important;
   color: white;
+  font-weight: 500;
+  font-size: 18px;
   height: 55px;
   background: #D9DFEA;
   border: none;
@@ -2838,6 +2982,8 @@ form .binta_call_back_form_btn {
   color: #00A7C2;
   position: relative;
   width: 20%;
+  font-size: 17px;
+  font-weight: 500;
   text-align: center;
   box-shadow: 70px 7px 55px rgba(50, 58, 65, 0.1);
   border-radius: 10px;
@@ -3016,7 +3162,40 @@ form .binta_call_back_form_btn {
 }
 
 .social_link_logo {
-  margin: 0px 10px;
+  margin: 0 7px;
+}
+
+.ruble_symbol {
+  line-height: 15px;
+  font-size: 12.3px;
+  font-weight: 600;
+  color: #00B3C6;
+}
+
+.ruble_symbol_basket_modules {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #6E7475;
+}
+
+.ruble_symbol_basket_black {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #6E7475;
+}
+
+.ruble_symbol_basket {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  color: #00B3C6;
 }
 
 .nav-link {
@@ -9875,7 +10054,7 @@ html, body {
 }
 
 .started-now__form__policy {
-  padding: 10px 25px !important;
+  padding: 10px 48px !important;
   text-align: center;
   color: #C8D1E1;
   line-height: 150%;
@@ -9914,10 +10093,15 @@ html, body {
   padding: 10px 33px 10px 33px;
 }
 
+#binta_call_back_form__today {
+  padding-bottom: 50px;
+}
+
 .binta_get_started_btn {
   border: none;
   height: 55px;
-  width: 175px;
+  width: 201px;
+  font-weight: 500;
   border-radius: 10px;
   font-size: 18px;
   color: #00A7C2;
@@ -10001,7 +10185,7 @@ html, body {
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner {
   margin: 0px;
-  width: 225px;
+  width: 100%;
   height: 34px;
   background: #FFFFFF;
   border: 2px solid #D9DFEA;
@@ -10016,6 +10200,10 @@ html, body {
   line-height: 15px;
   color: #FFFFFF;
   cursor: pointer;
+  @media (max-width: 992px){
+    width:249px;
+    margin: 0 auto;
+  }
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
@@ -10025,39 +10213,45 @@ html, body {
   font-weight: 500;
   top: 8px;
   color: #00B3C6;
-  right: 20px;
+  right: 30px;
 
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
   content: attr(data-off);
-  width: 111px;
-  height: 24px;
+  width: 121px;
+  height: 26px;
   background: #00B3C6;
-  border-radius: 7px;
+  border-radius: 4px;
   position: absolute;
-  left: 6px;
-  top: 3px;
+  left: 2px;
+  /* bottom: 3px; */
+  /* right: -32px; */
+  top: 2px;
+  /* top: 3.1px; */
   text-align: center;
   transition: all 0.5s ease;
-  box-shadow: 0px 0px 6px -2px #111;
-  padding: 4px 0px;
+  /* box-shadow: 0px 0px 6px -2px #111; */
+  padding: 5.5px 0px;
   color: #FFFFFF;
 }
 
 .basket__year {
-  display: none;
+  display: flex;
 }
 
 .sale_image {
-  padding-top: 55px;
+  padding-top: 20px;
   width: 100%;
-  height: 100%;
+  height: 95%;
+  @media (max-width: 1230px){
+    padding-top: 0!important;
+  }
 }
 
 .website_image {
   width: 100%;
-  margin-top: 40px;
+  height: 95%;
 }
 
 .commerce_image {
@@ -10090,7 +10284,7 @@ html, body {
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after {
   content: attr(data-on);
-  left: 103px;
+  left: 121px;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before {

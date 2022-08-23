@@ -27,7 +27,11 @@ header {
     position: relative;
     min-height: 90px;
     align-items: center;
-    padding: 5px 0px;
+    padding: 20px 0px;
+
+    @media (max-width: 1260px) {
+      padding-bottom: 0 !important;
+    }
 
 
     @media(max-width: 992px) {
@@ -41,10 +45,12 @@ header {
   }
 
   .header__logo {
+
+    padding-top:5px;
     padding-bottom: 30px;
 
     img {
-      width: 80%;
+      width: 170px;
     }
   }
 
@@ -146,6 +152,9 @@ header {
   margin-right: 16px;
 
 }
+.social_image {
+  width:24px;
+}
 
 
 //CONTENT START
@@ -200,7 +209,7 @@ header {
 
 .form-block__mobile {
   *, ::after, ::before {
-    box-sizing: border-box !important;
+    //box-sizing: border-box !important;
   }
 
   width: 75%;
@@ -354,7 +363,7 @@ header {
 
 .form-block {
   position: absolute;
-  bottom: 0;
+  bottom: -7%;
   width: 85%;
 
   input[type="text"] {
@@ -401,7 +410,7 @@ header {
   }
 
   &__input_demo_base {
-    padding: 10px 36px 10px 29px;
+    padding: 20px 36px 10px 29px;
 
     input {
       width: 99%;
@@ -410,7 +419,7 @@ header {
 
   &__input {
     display: flex;
-    padding-top: 10px;
+    padding-top: 20px;
     justify-content: space-evenly;
 
     input {
@@ -421,12 +430,12 @@ header {
   &__started {
     display: flex;
     justify-content: space-between;
-    padding: 10px 33px 10px 33px;
+    padding: 30px 33px 10px 33px;
 
     .binta_get_started_btn {
       border: none;
       height: 55px;
-      width: 175px;
+      width: 201px;
       border-radius: 10px;
       font-size: 18px;
       color: #00A7C2;
@@ -448,7 +457,7 @@ header {
   }
 
   &__subscribe {
-    padding: 5px 10px 0 25px;
+    padding: 10px 10px 0 25px;
 
     input[type="checkbox"] {
       display: none;
@@ -469,6 +478,7 @@ header {
 
     input:checked + label:before {
       content: '\2713';
+      text-align: center;
       font-size: large;
       color: #217D90;
       background-color: #FFFFFF;
@@ -536,6 +546,7 @@ label {
 
   text-align: center;
   letter-spacing: -0.01em;
+  font-family: 'Inter' !important;
 
   color: #FFFFFF;
 
@@ -767,6 +778,10 @@ label {
 .sidenav__uncorn_link__media {
   text-align: center;
   padding: 10px;
+  img {
+    width:25px;
+    height:25px;
+  }
 }
 
 .sidenav a {
